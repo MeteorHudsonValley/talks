@@ -11,6 +11,9 @@ Tasks = new Mongo.Collection("tasks");
 if (Meteor.isClient) {
   // This code only runs on the client
 
+  // At the top of our client code
+  Meteor.subscribe("tasks");
+
   // Replace the existing Template.body.helpers
   Template.body.helpers({
 
@@ -103,3 +106,10 @@ Meteor.methods({
   }
 
 });
+
+// At the bottom of simple-todos.js
+if (Meteor.isServer) {
+  Meteor.publish("tasks", function () {
+    return Tasks.find();
+  });
+}
