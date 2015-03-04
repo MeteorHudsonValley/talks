@@ -6,7 +6,7 @@
 <body>
   <div class="container">
     <header>
-    
+
     	<!-- display the count at the end of the <h1> tag -->
 		<h1>Todo List ({{incompleteCount}})</h1>
 
@@ -16,6 +16,9 @@
 			checked="{{hideCompleted}}" />
 			Hide Completed Tasks
 		</label>
+
+		<!-- Add login dropdown -->
+		{{> loginButtons}}
 
 		<!-- add a form below the h1 -->
 		<form class="new-task">

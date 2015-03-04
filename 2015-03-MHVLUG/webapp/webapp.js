@@ -13,7 +13,7 @@ if (Meteor.isClient) {
 
   // Replace the existing Template.body.helpers
   Template.body.helpers({
-    
+
     tasks: function () {
       if (Session.get("hideCompleted")) {
         // If hide completed is checked, filter tasks
@@ -37,7 +37,6 @@ if (Meteor.isClient) {
 
   // Inside the if (Meteor.isClient) block, right after Template.body.helpers:
   Template.body.events({
-
     "submit .new-task": function (event) {
       // This function is called when the new task form is submitted
       var text = event.target.text.value;
@@ -73,6 +72,11 @@ if (Meteor.isClient) {
       Tasks.remove(this._id);
     }
 
+  });
+
+  // At the bottom of the client code
+  Accounts.ui.config({
+    passwordSignupFields: "USERNAME_ONLY"
   });
 
 }
