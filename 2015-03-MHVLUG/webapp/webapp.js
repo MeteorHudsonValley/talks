@@ -10,9 +10,10 @@ Tasks = new Mongo.Collection("tasks");
 
 if (Meteor.isClient) {
   // This code only runs on the client
-  
+
   // Replace the existing Template.body.helpers
   Template.body.helpers({
+    
     tasks: function () {
       if (Session.get("hideCompleted")) {
         // If hide completed is checked, filter tasks
@@ -22,9 +23,16 @@ if (Meteor.isClient) {
         return Tasks.find({}, {sort: {createdAt: -1}});
       }
     },
+
     hideCompleted: function () {
       return Session.get("hideCompleted");
+    },
+    
+    // Add to Template.body.helpers
+    incompleteCount: function () {
+      return Tasks.find({checked: {$ne: true}}).count();
     }
+
   });
 
   // Inside the if (Meteor.isClient) block, right after Template.body.helpers:
