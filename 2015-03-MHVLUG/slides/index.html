@@ -192,37 +192,149 @@
 				<!-- Metor Tutorial -->
 				<section id="tutorial">
 
+
+					<section id="goal">
+						<h2> <a href="https://www.meteor.com/install"> 0. A Simple ToDos App </a></h2>
+						<table>
+						<tr>
+							<td><figure>
+							    <img height="450"
+							    data-src="images/WebApp-12b-Android.png"> 
+							    <figcaption><small>
+							    	Packaged for native (Android)
+							    </small></figcaption>
+							</figure></td>
+
+							<td><figure>
+							    <img height="500"
+							    data-src="images/WebApp-12b-Chrome.png"> 
+							    <figcaption><small>
+							    	Built for browser (mobile, desktop)
+							    </small></figcaption>
+							</figure></td>
+
+						</tr>
+						</table>
+
+					</section>
+
 					<section id="setup-0">
-						<h2> 0. Getting Started </h2>
+						<h2> <a href="https://www.meteor.com/install"> 0. Getting Started </a></h2>
+						<pre><code>
+ curl https://install.meteor.com/ | sh
+						</code></pre>
+
+						Installs Meteor libraries and tools, Node and Mongo dependencies. <i>(Windows support pending)</i>
+
 					</section>
 
 					<section id="create-1">
-						<h2> 1. Create Boilerplate App </h2>
+						<h2> <a href="https://www.meteor.com/try">1. Create Boilerplate App </a></h2>
+						<pre><code>
+meteor create webapp
+						</code></pre>				
+						<small>
+						This creates the basic scaffolding and code (HTML views, JS controller, CSS style).
+						</small>
+
+						<pre><code>
+webapp.js     // isomorphic codebase, loads at client and server
+webapp.html   // contains body, head and templates
+webapp.css    // app styles
+.meteor       // meteor configuration, local db
+						</code></pre>			
+						<small>
+						Note that directory structure and file names can impact how application is built and bundled for deployment.
+						</small>
+
 					</section>
 
 					<section id="deploy-2">
-						<h2> 2. Deploy Your App </h2>
+						<h2> <a href="https://www.meteor.com/try/6">2. Run/Deploy Your App </a> </h2>
+						<pre><code>
+cd webapp
+meteor run
+						</code></pre>				
+						<small>
+						This runs the Meteor server on localhost (default port 3000).<br>
+						If a remote Mongo server is not set, this also starts a local Mongo Daemon (database 'meteor').
+						</small>
+						<br><br>
+
+						<pre><code>
+meteor deploy webapphv.meteor.com  (-- delete)
+						</code></pre>			
+						<small>
+						For production deployment on AWS, Digital Ocean, Joyent or other cloud providers <br> use the <a href="https://meteorhacks.com/deploy-a-meteor-app-into-a-server-or-a-vm.html"> Meteor Up (mup)</a> tool. The 'deploy' option is for validation only.
+						</small>
+
 					</section>
 
 					<section id="explore-3">
-						<h2> 3. Under The Hood </h2>
+						<h2> <a href="https://www.meteor.com/try">3. Under The Hood </a> </h2>
+						<ul>
+							<li> <a href="https://www.meteor.com/isobuild">Isobuild</a> toolchain for runnable app
+							<li> <a href="http://docs.meteor.com/#/full/structuringyourapp">Directory conventions</a> for load order, inclusion
+							<li> <a href="http://docs.meteor.com/#/full/writingpackages">Packages</a> for ultimate modularity and reuse.
+						</ul>
+						<br><br>
+						<small>
+						The basic boilerplate application comes with simple 
+						<br> <a href="https://github.com/meteor/simple-todos/blob/377a8610c2fa77056d015e6998d5eb894436c99e/simple-todos.html">HTML</a> (views), <a href="https://github.com/meteor/simple-todos/blob/377a8610c2fa77056d015e6998d5eb894436c99e/simple-todos.js">JavaScript</a>  (helpers + handlers) and <a href="https://github.com/meteor/simple-todos/blob/377a8610c2fa77056d015e6998d5eb894436c99e/simple-todos.css">CSS </a> (stylesheets) files.
+						</small>
+
+
 					</section>
 
 					<section id="templates-4">
-						<h2> 4. Templates and Data Binding </h2>
+						<h2> <a href="https://www.meteor.com/try/2"> 4. Templates and Data Binding</a> </h2>
+						<ul>
+							<li> <a href="https://github.com/meteor/meteor/blob/devel/packages/spacebars/README.md">Spacebars </a> Template Language 
+							<li> Data Binding with <a href="http://docs.meteor.com/#/full/template_helpers"> Helpers </a>
+							<li> Reactive UI Computations with <a href="https://www.meteor.com/blaze">Blaze </a>
+							<li> Reactive Data Sources with <a href="https://www.meteor.com/tracker"> Tracker </a>
+						</ul>
+						<br><br>
+						<small>
+							Templates contain expressions and conditionals <br> that bind data and logic to your views <br> 
+						</small>
 					</section>
 
 					<section id="collections-5">
-						<h2> 5. Collections and CRUD </h2>
+						<h2> <a href="https://www.meteor.com/try/3">5. Collections and CRUD </a></h2>
+						<ul>
+							<li> <a href="http://docs.meteor.com/#/full/mongo_collection">Mongo Collections </a> persist data
+							<li> Database <a href="http://docs.meteor.com/#/full/dataandsecurity"> Everywhere</a> with one API
+							<li> <i>autopublish</i> and <i>insecure</i> packages 
+							<li> <a href="https://meteorhacks.com/introduction-to-latency-compensation.html">Latency Compensation </a> for efficiency 
+						</ul>
+						<br><br>
+						<small>
+						Currently focused on MongoDB as default database (backed by <a href="https://www.meteor.com/mini-databases">minimongo</a> on client)<br>
+						Other databases are under development (e.g., <a href="https://atmospherejs.com/slava/miniredis">miniredis</a>)
+						</small>
 					</section>
 
 					<section id="forms-6">
-						<h2> 6. Forms, Inputs and Events </h2>
+						<h2> <a href="https://www.meteor.com/try/4">6. Forms, Inputs and Events </a> </h2>
+						<ul>
+						<li> <a href="http://docs.meteor.com/#/full/eventmaps"> Callback </a> receives event and template objects
+						<li> <a href="http://docs.meteor.com/#/full/template_events">Event Handlers </a> at Template level.
+						<li> Event propagation mimics DOM events
+
+						</ul>
 					</section>
 
 					<section id="cordova-7">
-						<h2> 7. Running on Mobile </h2>
+						<h2> <a href="https://www.meteor.com/try/7">7. Running on Mobile </h2></a>
+						<ul>
+							<li> <a href="https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration"> Cordova Integration </a> for Android, iOS
+							<li> Run on <a href="https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration#user-content-running-in-a-simulator">simulator</a>, or on <a href="https://github.com/meteor/meteor/wiki/How-to-run-your-app-on-an-Android-device">device</a>
+							<li> <a href="https://github.com/meteor/meteor/wiki/Meteor-Cordova-Phonegap-integration#user-content-hot-code-push">Hot Code Push </a> (bypass app store)
+						</ul>
 					</section>
+
+					<!--
 
 					<section id="session-8">
 						<h2> 8. Session and State </h2>
@@ -235,14 +347,26 @@
 					<section id="security-10">
 						<h2> 10. Security Sidebar </h2>
 					</section>
+					--> 
 
 					<section id="pubsub-11">
-						<h2> 11. Publish and Subscribe </h2>
+						<h2> <a href="https://www.meteor.com/try/11">8. Publish and Subscribe </h2></a>
+						<br>
+						Intelligent and reactive data synchronization.<br>
+						<figure>
+						    <img height="400" 
+						    data-src="https://www.discovermeteor.com/images/blog/advanced-publications@2x.png"> 
+						    <figcaption><small>
+						    	<a href="https://www.discovermeteor.com/blog/understanding-meteor-publications-and-subscriptions/">[DiscoverMeteor Blog]</a> <i>Understanding Publications and Subscriptions </i>
+						    </small></figcaption>
+						</figure>
 					</section>
 
+					<!--
 					<section id="pubsub-12">
 						<h2> 12. Routes and Navigation </h2>
 					</section>
+					-->
 
 				</section>
 
@@ -261,7 +385,7 @@
 				</section>
 				-->
 
-				<!-- Meteor Advanced: Deep Dives -->
+				<!-- Meteor Advanced: Deep Dives --
 				<section id="subprojects">
 
 					<section id="outline">
@@ -327,7 +451,43 @@ function linkify( selector ) {
 					</code></pre>
 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
+				-->
 
+
+
+					<section id="demos">
+						<h2> Demos and Code </h2>
+
+						<table>
+						<tr>
+							<td><figure>
+							    <img width="300" 
+							    data-src="images/WebApp-12b-Android.png"> 
+							    <figcaption><small>
+							    	Simple To-Dos (Android, Web)
+							    </small></figcaption>
+							</figure></td>
+
+							<td><figure>
+							    <img height="300" 
+							    data-src="https://d14jjfgstdxsoz.cloudfront.net/todos-screen.png"> 
+							    <figcaption><small>
+							    	<a href="https://github.com/meteor/meteor/tree/devel/examples/todos">[Web App]</a> <i>Todos: Collaborative Task Management App</i> 
+							    	(~600 lines of JS) 
+							    </small></figcaption>
+							</figure></td>
+
+
+							<td><figure>
+							    <img height="200" 
+							    data-src="https://d14jjfgstdxsoz.cloudfront.net/localmarket-cropped.png"> 
+							    <figcaption><small>
+							    	<a href="https://github.com/meteor/meteor/tree/devel/examples/localmarket">[Native Apps]</a> <i>Local Market: Social Engagement App for iOS/Android </i>(~1000 lines of JS)
+							    </small></figcaption>
+							</figure></td>
+						</tr>
+						</table>
+					</section>
 
 				<!-- THANK YOU -->
 				<section style="text-align: left;">
