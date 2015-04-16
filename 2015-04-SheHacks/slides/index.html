@@ -114,18 +114,18 @@
 
 					<section id="demo">
 						<h2> Let's See a Demo </h2>
-						<a a href="https://demo.sandstorm.io/grain/ksv6Lzk9P28fqYmaYjtBbK"> (Hosted on Sandstorm.io) </a>
 						<figure>
-						    <img height="400" 
-						    data-src="https://camo.githubusercontent.com/e26f21e6f1ff5b651c3e1e1a0cde4f11f50d576b/687474703a2f2f692e696d6775722e636f6d2f49496448556d572e706e67">
+						    <img height="500" 
+						    data-src="images/shehacksnycapp.png">
 						    <figcaption>
 						    <small>
-					    	<a href="http://libreboard.com">LibreBoard: </a>
-					    	An <a href="https://github.com/libreboard/libreboard">
-					    	 Open Source </a> Kanban Board using Meteor  		
+					    	<a href="http://todos.meteor.com/">ToDos: </a>
+					    	One of many <a href="https://github.com/meteor/meteor/tree/devel/examples">
+					    	 Open Source </a> examples from Meteor  		
 						    </small>
 						    </figcaption>
 						</figure>
+						Also check out <a href="http://shehacksnyc.meteor.com">the app we'll build </a>
 					</section>
 
 					<section id="platform">
@@ -156,7 +156,7 @@
 					</section>
 
 					<section id="exampleA">
-						<h2> What can I build? </h2>
+						<h2> Can I build web apps? </h2>
 						<figure>
 						    <img height="400" 
 						    data-src="https://d14jjfgstdxsoz.cloudfront.net/todos-screen.png"> 
@@ -170,7 +170,7 @@
 					</section>
 
 					<section id="exampleB">
-						<h2> What can I build? </h2>
+						<h2> How about native mobile apps? </h2>
 						<figure>
 						    <img height="400" 
 						    data-src="https://d14jjfgstdxsoz.cloudfront.net/localmarket-cropped.png"> 
@@ -183,69 +183,16 @@
 <pre><code>         meteor create --example localmarket</code></pre>
 					</section>
 
-
-					<section id="features1">
-						<h2>Features Recap</h2>
-
-						<span class="fragment">
-						<br>
-						<a href="http://meteor.com">Modern User Interface</a> 
-						<br><small>
-						Responsive Design * Single Page Applications
-						</small><br>
-						</span>
-
-						<span class="fragment">
-						<br>
-						<a href="http://meteor.com">Mobile + Web Friendly</a>
-						<br><small>
-						Browser Ready * Cordova Integration for Native App Markets
-						</small><br>
-						</span>
-
-						<span class="fragment">
-						<br>
-						<a href="http://meteor.com">Isomorphic in JavaScript</a>
-						<br><small>
-						One language * One codebase * One database API
-						</small><br>
-						</span>
-					</section>
-
-					<section id="features2">
-						<h2>Features Recap</h2>
-
-						<span class="fragment">
-						<br>
-						<a href="http://meteor.com">Unified Package System
-						</a><br><small>
-						Atmosphere Repository * Meteor, Cordova and NPM Packages.
-						</small><br>
-						</span>
-
-						<span class="fragment">
-						<br>
-						<a href="http://meteor.com">Unified Build System
-						</a><br><small>
-						One buid tool to Create, Package, Test, Run and Deploy.
-						</small><br>
-						</span>
-
-						<span class="fragment">
-						<br>
-						<a href="http://meteor.com">Database Everywhere
-						</a><br><small>
-						Data on the Wire * Latency Compensation * Data Distribution Protocol
-						</small><br>
-						</span>
-					</section>
 				</section>
 
 				<!-- Meteor Seque -->
 				<section id="seque1">
-					<h2>Tutorial Time!!</h2>
+					<h2>Let's Do This!</h2>
 
 					<iframe src="//giphy.com/embed/iavKpDrWkA8Io?html5=true" width="480" height="240" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<br>
+					Tutorial Time
+					<br>
 					
 				</section>
 
@@ -496,6 +443,119 @@ Deleted.
 						</div>
 					</section>
 
+					<section id="mongo1">
+						<h2> 
+						<a href="https://www.mongodb.org">3a. About MongoDB</a> 
+						</h2>
+						<br>
+						<ul>
+							<li>Document database (unstructured data)</li>
+							<li> JSON-like format (name-value pairs)</i></li>
+							<li> <i>Collections =></i> group similar documents
+							<li> <i>Replica Sets =></i> for fault tolerance (vertical scaling) </li>
+							<li><i>Sharding =></i> for load balancing (horizontal scaling) </li>
+						</ul>
+
+						<hr style="color:gray;" width=300>
+						<p style="color:gray;font-size:12pt">
+						Let's explore the Meteor mongo (local) DB
+						<pre><code>
+$ meteor mongo
+MongoDB shell version: 2.6.7
+connecting to: 127.0.0.1:3001/meteor
+meteor:PRIMARY> 
+						</code></pre>	
+						</p>
+					</section>
+
+					<section id="mongo2">
+						<h2> 
+						<a href="https://www.mongodb.org">3b. MongoDB Primer</a> <a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
+						href="http://docs.mongodb.org/manual/tutorial/getting-started/">(try a tutorial)</a> 
+						</h2>
+						First, some basic commands:
+						<br>
+						<table style="font-size:20pt"><tr><td>
+							<br> 
+							db 
+							<span style="color:gray;"> show currently active db </span>
+
+							<br> 
+							show databases 
+							<span style="color:gray;"> show all (non-empty) dbs on this server </span>
+
+							<br> 
+							show collections
+							<span style="color:gray;"> show all collections in current db </span>
+
+							<br> 
+							use mydb 
+							<span style="color:gray;"> make 'mydb' the current (active) db </span>
+
+							<br>
+							<br> 
+							db.help()
+							<span style="color:gray;">  list all methods that can be called on db </span>
+
+							<br> 
+							db.createCollection('myColl') 
+							<span style="color:gray;">  create the 'myColl' collection on current db </span>
+
+							<br> 
+							db.showCollections()
+							<span style="color:gray;">  show all collections in current db </span>
+
+							<br> 
+							db.dropDatabase()
+							<span style="color:gray;">  delete the db </span>
+
+							<br>
+							db.myColl.drop()
+							<span style="color:gray;">   delete th 'myColl' collection </span>
+
+							<br>
+							db.myColl.dropIndexes() 
+							<span style="color:gray;">   delete all indexes on the 'myColl' collection </span>
+							<br> 
+							db.myColl.getDB() 
+							<span style="color:gray;">   get the db object associated with the 'myColl' collection </span>
+						</td></tr></table>						
+					</section>
+
+					<section id="mongo3">
+						<h2> 
+						<a href="https://www.mongodb.org">3c. MongoDB Primer</a> <a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
+						href="http://docs.mongodb.org/manual/tutorial/getting-started/">(try a tutorial)</a> 
+						</h2>
+						Next, CRUD operations (on collection 'myColl')
+						<br>
+						<table style="font-size:20pt"><tr><td>
+							<br>
+							db.myColl.count()
+							<span style="color:gray;"> number of documents in collection </span>
+
+							<br> 
+							db.myColl.insert(doc) 
+							<span style="color:gray;"> add document to collection </span>
+
+							<br> 
+							db.findOne(query)
+							<span style="color:gray;"> return first document matching query </span>
+
+							<br> 
+							db.myColl.find(query) 
+							<span style="color:gray;"> return all documents matching query </span>
+
+							<br>
+							db.myColl.update(query, object[.., upsert_flag, multi_flag])
+							<span style="color:gray;"> updatematching documents (insert if needed) (first match vs. all) </span>
+
+							<br>
+							db.myColl.remove(query) 
+							<span style="color:gray;"> remove all matching documents </span>
+						</td></tr></table>						
+					</section>
+
 					<section id="step4">
 						<h2> 
 						<a href="https://www.meteor.com/try/4">4. Forms and Events</a> 
@@ -511,7 +571,6 @@ Deleted.
 							<td> </td>
 							<td> </td>
 						</tr></table>
-						</p>
 
 						<hr style="color:gray;" width=300>
 						<p style="color:gray;font-size:12pt">
@@ -536,7 +595,7 @@ Deleted.
 							<td> </td>
 							<td> </td>
 						</tr></table>
-						</p>
+						
 
 						<hr style="color:gray;" width=300>
 						<p style="color:gray;font-size:12pt">
@@ -555,15 +614,16 @@ Deleted.
 
 						<h4 style="text-transform:lowercase;"> Rebuild you app codebase for Android & iOS </h4>
 
-
+						<br>
+						Build codebase by installing relevant SDK, then adding platform package to your codebase.
 						<br><br>
-						<table><tr>
-							<td> Android Emulator </td>
-							<td> iOS Emulator </td>
-							<td> Real Device </td>
-						</tr></table>
-						</p>
-
+						<ul>
+							<li> (Platforms) android or ios </li>
+							<li> (Runtime) emulator or real device 
+							</li>
+							<li> (Updates) hot deploy, not via store
+						</ul>
+						
 						<hr style="color:gray;" width=300>
 						<p style="color:gray;font-size:12pt">
 						<br>
@@ -586,8 +646,7 @@ Deleted.
 							<td> </td>
 							<td> </td>
 						</tr></table>
-						</p>
-
+						
 						<hr style="color:gray;" width=300>
 						<p style="color:gray;font-size:12pt">
 						<br>
@@ -611,7 +670,7 @@ Deleted.
 							<td> </td>
 							<td> </td>
 						</tr></table>
-						</p>
+						
 
 						<hr style="color:gray;" width=300>
 						<p style="color:gray;font-size:12pt">
@@ -636,7 +695,7 @@ Deleted.
 							<td> </td>
 							<td> </td>
 						</tr></table>
-						</p>
+						
 
 						<hr style="color:gray;" width=300>
 						<p style="color:gray;font-size:12pt">
@@ -661,7 +720,7 @@ Deleted.
 							<td> </td>
 							<td> </td>
 						</tr></table>
-						</p>
+						
 
 						<hr style="color:gray;" width=300>
 						<p style="color:gray;font-size:12pt">
@@ -796,7 +855,6 @@ Deleted.
 						<br>
 						Some of the core functionality of Meteor comes from community packages e.g., <a href="https://atmospherejs.com/iron/router">iron-router</a>
 						</p>
-
 				</section>
 
 				<!-- Testing -->
@@ -826,6 +884,63 @@ Deleted.
 					</tr></table>
 				</section>
 
+				<!-- Recap -->
+				<section id="features1">
+					<h2>Features Recap</h2>
+
+					<span class="fragment">
+					<br>
+					<a href="http://meteor.com">Modern User Interface</a> 
+					<br><small>
+					Responsive Design * Single Page Applications
+					</small><br>
+					</span>
+
+					<span class="fragment">
+					<br>
+					<a href="http://meteor.com">Mobile + Web Friendly</a>
+					<br><small>
+					Browser Ready * Cordova Integration for Native App Markets
+					</small><br>
+					</span>
+
+					<span class="fragment">
+					<br>
+					<a href="http://meteor.com">Isomorphic in JavaScript</a>
+					<br><small>
+					One language * One codebase * One database API
+					</small><br>
+					</span>
+				</section>
+
+				<section id="features2">
+					<h2>Features Recap</h2>
+
+					<span class="fragment">
+					<br>
+					<a href="http://meteor.com">Unified Package System
+					</a><br><small>
+					Atmosphere Repository * Meteor, Cordova and NPM Packages.
+					</small><br>
+					</span>
+
+					<span class="fragment">
+					<br>
+					<a href="http://meteor.com">Unified Build System
+					</a><br><small>
+					One buid tool to Create, Package, Test, Run and Deploy.
+					</small><br>
+					</span>
+
+					<span class="fragment">
+					<br>
+					<a href="http://meteor.com">Database Everywhere
+					</a><br><small>
+					Data on the Wire * Latency Compensation * Data Distribution Protocol
+					</small><br>
+					</span>
+				</section>
+
 
 				<!-- THANK YOU -->
 				<section style="text-align: left;">
@@ -837,10 +952,11 @@ Deleted.
 						<a href="http://linkedin.com/in/nityan"> in/nityan</a> <br>
 					</p>
 					<br>
-					Or join a local Meteor meetup...
+					Or join a local meetup...
 					<p>
-						<a href="http://www.meetup.com/Meteor-Hudson-Valley/">Meteor Hudson Valley</a> (Nitya) <br>
-						<a href="http://www.meetup.com/MeteorNY/">Meteor New York </a> (Michael)<br>
+						Meteor <a href="http://www.meetup.com/Meteor-Hudson-Valley/">Hudson Valley</a> (Nitya) <br>
+						Meteor <a href="http://www.meetup.com/MeteorNY/">New York </a> (Michael)<br>
+						MongoDB User Group <a href="http://www.meetup.com/New-York-MongoDB-User-Group/">New York </a> (Michael)<br>
 					</p>
 					
 				</section>
