@@ -41,6 +41,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
+
 				<!-- Title Slide -->
 				<section data-background="https://d14jjfgstdxsoz.cloudfront.net/node-bottom.png">
 					<h1>MVP with Meteor</h1>
@@ -71,6 +72,9 @@
 					</p>
 				</section>
 
+
+
+				<!-- Motivation -->
 				<section id="frustrated">
 					<h2>Building modern apps is hard!</h2>
 
@@ -80,6 +84,9 @@
 					</p>
 				</section>
 
+
+
+				<!-- Message -->
 				<section id="marketing">
 					<h2>Meteor can help!</h2>
 					<br>
@@ -99,7 +106,9 @@
 					</p>
 				</section>
 
-				<!-- About Meteor: Features -->
+
+
+				<!-- About Meteor -->
 				<section id="intro">
 
 					<section id="about">
@@ -185,20 +194,25 @@
 
 				</section>
 
-				<!-- Meteor Seque -->
+
+
+				<!-- Meteor Tutorial Seque -->
 				<section id="seque1">
 					<h2>Let's Do This!</h2>
 
 					<iframe src="//giphy.com/embed/iavKpDrWkA8Io?html5=true" width="480" height="240" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					<br>
 					Tutorial Time
-					<br>
-					
+					<br>			
 				</section>
+
+
 
 				<!-- Metor Tutorial -->
 				<section id="tutorial">
 
+
+					<!-- Metor Tutorial: Goal -->
 					<section id="goal">
 					<h2> <a href="https://github.com/MeteorHudsonValley/shehacksnyc"> What We're Building </a></h2>
 					One codebase. Multiple target platforms.
@@ -231,31 +245,33 @@
 					</table>
 					</section>
 
+					<!-- Metor Tutorial: Process -->
 					<section id="process">
 					<h2> <a href="https://www.meteor.com/install"> How We're Building It</a></h2>
 					<table><tr><td>
 					<ul style="font-size:24pt">
-						<li> 0-Install Meteor <a style="color:limegreen;" href="https://github.com/MeteorHudsonValley/shehacksnyc">(clone repo)</a></li>
-						<li> 1-Create Basic App <a style="color:limegreen;" 
+						<li> 0 - Install Meteor <a style="color:limegreen;" href="https://github.com/MeteorHudsonValley/shehacksnyc">(clone repo)</a></li>
+						<li> 1 - Create Basic App <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-1">(tags/step-1)</a> </li>
-						<li> 2-Modify User Interfaces <a style="color:limegreen;" 
+						<li> 2 - Build your User Interface <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-2">(tags/step-2)</a> </li>
-						<li> 3-Persist Application Data <a style="color:limegreen;" 
-						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-3">(tags/step-3)</a> </li>
-						<li> 4-Support User Inputs & Interactions <a style="color:limegreen;" 
+						<li> 3 - Store your Application Data <a style="color:limegreen;" 
+						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-3">(tags/step-3)(mongo primer)</a> </li>
+						<li> 4 - Support User input & interactions <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-4">(tags/step-4)</a> </li>
-						<li> 5-Support Data Updates & Deletes <a style="color:limegreen;" 
+						<li> 5 - Support Data updates & deletes <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-5">(tags/step-5)</a> </li>
-						<li> 6-Deploy App To Server (Hosting) </li>
-						<li> 7-Build Mobile (Android/iOS) Editions <a style="color:limegreen;" 
+						<li> 6 - Deploy your app for public use <span style="color:gray;">(Hosting)</span> 
+						</li>
+						<li> 7 - Create mobile (Android, iOS) editions <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-7">(tags/step-7)</a> </li>
-						<li> 8-Use 'Session' to share transient UI state<a style="color:limegreen;" 
+						<li> 8 - Add 'Session' state for sharing transient context <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-8">(tags/step-8)</a> </li>
-						<li> 9-Add User 'Accounts' (authentication profiles) <a style="color:limegreen;" 
+						<li> 9 - Add 'Accounts' for authenticating users <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-9">(tags/step-9)</a> </li>
-						<li> 10-Add Security with 'Methods' (access control)<a style="color:limegreen;" 
+						<li> 10 - Add 'Methods' for secure data operations <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-10">(tags/step-10)</a> </li>
-						<li> 11-Automate Data (publish/subscribe) <a style="color:limegreen;" 
+						<li> 11 - Use 'Publish/Subscribe' to automate data sync <a style="color:limegreen;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-11">(tags/step-11)</a> </li>
 					</ul>
 					</td></tr></table>
@@ -270,21 +286,22 @@
 $ curl https://install.meteor.com/ | sh
 						</code></pre>
 						<br>
-
-						<hr style="color:gray;" width=300>
 						<span style="color:gray;">
 						To follow along, also clone the <a href="https://github.com/MeteorHudsonValley/shehacksnyc">shehacksnyc repo</a>
 						</span>
 						<pre><code>
 $ git clone https://github.com/MeteorHudsonValley/shehacksnyc.git
 						</code></pre>
-
-						<p style="color:gray;font-size:12pt">
+						<br>
+						<div align="left" 
+							style="color:gray;font-size:12pt">
+							<hr>
 							Meteor is relatively stable on *nix systems.
 							A preview version was just released for Windows <a href="https://github.com/meteor/meteor/wiki/Preview-of-Meteor-on-Windows">*</a>.
 							<br>
 							Once you clone the repo, you can grab the version for a given step by simply checking out the tag. The tag for each step will be clearly marked in the slide title. So a title with 'tags/step-1' implies you can switch to code for that step using 'git checkout tags/step-1' on your local cloned repo.
-						</p>
+						
+						</div>
 					</section>
 
 
@@ -300,12 +317,9 @@ $ git clone https://github.com/MeteorHudsonValley/shehacksnyc.git
 $ meteor create webapp
 						</code></pre>
 						<br>	
-
-						<hr style="color:gray;" width=300>
 						<span style="color:gray;">
 						Open an editor. Let's explore the code.
 						</span>
-
 						<pre><code>
 ls -al ./webapp
 webapp.js     // app processing (contains data helpers, event handlers)
@@ -314,9 +328,12 @@ webapp.css    // app styles
 .meteor       // meteor configuration, local db
 						</code></pre>
 
-						<span style="color:gray;font-size:12pt">
-						Directory hierarchy, file names have meaning. The .meteor directory is managed by Meteor and should not be edited manually.
-						</span>
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							Directory hierarchy, file names have meaning. The .meteor directory is managed by Meteor and should not be edited manually.
+						</div>
 					</section>
 
 
@@ -338,19 +355,20 @@ $ meteor
 => App running at: http://localhost:3000/
 						</code></pre>
 						<br>
-
-						<hr style="color:gray;" width=300>
 						<span style="color:gray;">
 						Open a browser. Let's explore the app.
 						</span>
-					
-						<p style="color:gray;font-size:12pt">
+						<br><br>
+
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
 							Boilerplate app shows a basic view (template), event handling (click) features. No styling (yet).
 							<br>
 							Use 'meteor run' explicitly to run against a specific platform e.g., 'meteor run android' runs app in an Android emulator.
 							<br> 
 							Use 'meteor reset' to clear a local database and 'meteor mongo' to open a MongoDB console to it.
-						</p>
+						</div>
 					</section>
 
 
@@ -369,12 +387,14 @@ $ meteor deploy shehacksnyc.meteor.com --delete
 Deleted.
 						</code></pre>	
 						<br>
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+						<hr>
 						Meteor has free hosting for validation only, not for production apps. Deployment tied to your 'Meteor' account. Create one if needed.<br>
 						For production, explore third party services. See <a href="https://meteorhacks.com/deploy-a-meteor-app-into-a-server-or-a-vm.html"> Meteor Up (mup)</a> for an example.
 						<br>
-						</p>
+						</div>
 					</section>
 
 					<section id="minorwin">
@@ -395,26 +415,25 @@ Deleted.
 
 						<p style="text-transform:lowercase;"> 
 						are 'blueprints' (with data placeholders) for modular UI
+						<br><br><br>
+						the templating system has three parts:
 						</p>
-
-						<div class="fragment">
-						<br>
 						<table><tr>
-							<td><a href="https://github.com/meteor/meteor/blob/devel/packages/spacebars/README.md">Spacebars </a> (language) for defining templates</td>
-							<td><a href="https://www.meteor.com/blaze">Blaze </a> (engine) activates and renders template into DOM</td>
-							<td><a href="https://www.meteor.com/blaze">Tracker </a> (library) triggers reactive DOM updates in Blaze on data changes</td>
+							<td><a href="https://github.com/meteor/meteor/blob/devel/packages/spacebars/README.md">Spacebars </a> (language) <br>to add logic and data to views </td>
+							<td><a href="https://www.meteor.com/blaze">Blaze </a> (engine) <br> to activate and renders templates into DOM</td>
+							<td><a href="https://www.meteor.com/blaze">Tracker </a> (library) <br> to trigger reactive updates on data changes</td>
 						</tr></table>
 						</p>
-						<br>
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
-						Templates are passive HTML structures with placeholders for data.<br> 
-						Template <i>helpers</i> bind data 'contexts' dynamically [<a href="https://www.discovermeteor.com/blog/a-guide-to-meteor-templates-data-contexts/">ref</a>], before it is rendered into DOM. 
-						<br> 
-						Template <i>tags</i> (#with, #each) can be used to set the data context explicitly. 
-						<br> 
-						Template <i>events</i> declare handlers for DOM events associated with that template.
-						</p>
+						
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							Templates are passive HTML structures with placeholders for data.<br> 
+							Template <i>helpers</i> bind data 'contexts' dynamically [<a href="https://www.discovermeteor.com/blog/a-guide-to-meteor-templates-data-contexts/">ref</a>], before it is rendered into DOM. 
+							<br> 
+							Template <i>tags</i> (#with, #each) can be used to set the data context explicitly. 
+							<br> 
+							Template <i>events</i> declare handlers for DOM events associated with that template.
 						</div>
 					</section>
 
@@ -428,7 +447,6 @@ Deleted.
 						<p style="text-transform:lowercase;"> 
 						persist application data to a (MongoDB) database
 
-						<div class="fragment">
 						<br>
 						<table><tr>
 							<td><a href="https://www.mongodb.com">MongoDB </a> (server) full-featured db, utilities </td>
@@ -436,10 +454,13 @@ Deleted.
 							<td><a href="https://www.meteor.com/ddp">DDP </a> (protocol) transfers data, syncs both db reactively</td>
 						</tr></table>
 						</p>
-
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
-						</p>
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							Collections expose a consistent API on both client and server sides. <br>
+							Template helpers often query Collections, returning reactive data cursors <br>
+							Collections are insecure and autopublish by default <br>
 						</div>
 					</section>
 
@@ -447,25 +468,28 @@ Deleted.
 						<h2> 
 						<a href="https://www.mongodb.org">3a. About MongoDB</a> 
 						</h2>
-						<br>
-						<ul>
-							<li>Document database (unstructured data)</li>
-							<li> JSON-like format (name-value pairs)</i></li>
-							<li> <i>Collections =></i> group similar documents
-							<li> <i>Replica Sets =></i> for fault tolerance (vertical scaling) </li>
-							<li><i>Sharding =></i> for load balancing (horizontal scaling) </li>
-						</ul>
-
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
-						Let's explore the Meteor mongo (local) DB
+						MongoDB is a document database, useful for storing unstructured data (flexible schema)
+						<br> 
+						<br>	
+						<span style="color:gray;">
+						Open a terminal. Let's explore the local Mongo db.
+						</span>
 						<pre><code>
 $ meteor mongo
 MongoDB shell version: 2.6.7
 connecting to: 127.0.0.1:3001/meteor
 meteor:PRIMARY> 
 						</code></pre>	
-						</p>
+
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							Data is persisted in a JSON-like format (name-value pairs) <br>
+							Data is grouped into "Collections" (analogous to tables in RDBMS) <br>
+							Use replica sets to support fault tolerance (vertical scaling) <br>
+							Use sharding to support load balancing (horizontal scaling)
+						</div>
 					</section>
 
 					<section id="mongo2">
@@ -475,7 +499,7 @@ meteor:PRIMARY>
 						</h2>
 						First, some basic commands:
 						<br>
-						<table style="font-size:20pt"><tr><td>
+						<table style="color:limegreen;font-size:20pt"><tr><td>
 							<br> 
 							db 
 							<span style="color:gray;"> show currently active db </span>
@@ -527,9 +551,9 @@ meteor:PRIMARY>
 						<a href="https://www.mongodb.org">3c. MongoDB Primer</a> <a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
 						href="http://docs.mongodb.org/manual/tutorial/getting-started/">(try a tutorial)</a> 
 						</h2>
-						Next, CRUD operations (on collection 'myColl')
+						Next, some collection operations (on 'myColl')
 						<br>
-						<table style="font-size:20pt"><tr><td>
+						<table style="color:limegreen;font-size:20pt"><tr><td>
 							<br>
 							db.myColl.count()
 							<span style="color:gray;"> number of documents in collection </span>
@@ -562,21 +586,17 @@ meteor:PRIMARY>
 						<a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-4">tags/step-4</a> 
 						</h2>
-
+						<br>
 						<h4 style="text-transform:lowercase;"> Add input capabilities and handle user interactions </h4>
-
-						<div class="make-fragment">
 						<br>
-						<table><tr>
-							<td> </td>
-							<td> </td>
-						</tr></table>
-
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
-						<br>
-						[Notes]
-						</p>
+						Use standard forms in templates to accept user input. Templates receive all standard DOM events
+						<br><br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							<b>Attaching events to templates.</b> Template.x.events is a dictionary of event handlers registered against common DOM events.<br>
+							<b>Inserting into collection. </b> Since collection is still insecure, we can insert directly at client <br>
+							<b>Sorting tasks. </b> The Collection.find() calls can take sort and filter options to order and limit returned results.
 						</div>
 					</section>
 
@@ -586,22 +606,17 @@ meteor:PRIMARY>
 						<a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-5">tags/step-5</a> 
 						</h2>
-
+						<br>
 						<h4 style="text-transform:lowercase;"> Support ability to modify or delete data </h4>
+						<br>						
+						Use "this" inside event handlers to gain access to the <i>data</i> context for that template.
 
-						<div class="make-fragment">
-						<br>
-						<table><tr>
-							<td> </td>
-							<td> </td>
-						</tr></table>
-						
-
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
-						<br>
-						[Notes]
-						</p>
+						<br><br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							<b>Checking off completed tasks</b>. Requires addition of checkbox element to template (HTML), handling of checkbox-toggle event (JS), and styling of checkbox state (CSS)<br>
+							<b>Updating Collection </b>. Note the use of '$set' to update specific attributes of a targeted document.
 						</div>
 					</section>
 
@@ -612,23 +627,29 @@ meteor:PRIMARY>
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-5">tags/step-7</a> 
 						</h2>
 
-						<h4 style="text-transform:lowercase;"> Rebuild you app codebase for Android & iOS </h4>
+						<h4 style="text-transform:lowercase;"> Rebuild your app codebase for Android & iOS </h4>
 
 						<br>
-						Build codebase by installing relevant SDK, then adding platform package to your codebase.
-						<br><br>
-						<ul>
-							<li> (Platforms) android or ios </li>
-							<li> (Runtime) emulator or real device 
-							</li>
-							<li> (Updates) hot deploy, not via store
-						</ul>
-						
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
+						<div>
+						Installing the relevant SDK. <br> 
+						Add the relevant platform package.
 						<br>
-						[Notes]
-						</p>
+						<pre><code>
+$ meteor install-sdk android
+$ meteor add-platform android
+$ meteor run android
+
+$ meteor run android-device
+$ meteor run android-device --mobile-server my_app_name.meteor.com
+						</code></pre>
+						</div>
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							Meteor downloads the SDK and dependencies for Android <br>
+							For iOS, you need to install XCode first (Mac dependency) <br>
+						</div>
 					</section>
 
 					<section id="step8">
@@ -639,19 +660,21 @@ meteor:PRIMARY>
 						</h2>
 
 						<h4 style="text-transform:lowercase;"> Use 'Session' variables to share transient UI state </h4>
-
-						<div class="make-fragment">
 						<br>
-						<table><tr>
-							<td> </td>
-							<td> </td>
-						</tr></table>
-						
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
+						Session is a convenient place to store temporary UI state, and can be used in helpers just like a collection
 						<br>
-						[Notes]
-						</p>
+						<br>
+						<br>
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr> This is a good time to talk about <a href="http://docs.meteor.com/#/full/reactivity">Reactivity</a>: Reactive Computations and Reactive Data Sources.
+							<br>
+							A Reactive Data Source knows when its contents change, and can notify listeners of that change. Ex: Session, Collection queries, Meteor.user
+							<br>
+							A Reactive Computation is one that automatically recomputes itself when a contained Reactive Data Source changes. Ex: Template methods, Tracker.autorun, Blaze.render..
+							<br>
+							Here Session is used to make 'hideCompleted' state reactive for template use.
 						</div>
 					</section>
 
@@ -660,23 +683,29 @@ meteor:PRIMARY>
 						<a href="https://www.meteor.com/try/9">9. Adding User Accounts</a> 
 						<a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
 						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-9">tags/step-9</a> 
-						</h2>
-
-						<h4 style="text-transform:lowercase;"> Support authenticated actions with user profiles </h4>
-
-						<div class="make-fragment">
+						</h2>	
 						<br>
-						<table><tr>
-							<td> </td>
-							<td> </td>
-						</tr></table>
-						
-
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
+						<div>
+						Adding authentication support (even 3rd party) is easy.
 						<br>
-						[Notes]
-						</p>
+						<pre><code>
+$meteor add accounts-ui accounts-password
+$meteor add accounts-twitter accounts-facebook accounts-google
+						</code></pre>
+						<br>
+						Integrating the UI element requires one line.
+						<pre><code>
+{{> loginButtons}}						
+						</code></pre>
+						</div>
+				<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							Learn more about the Meteor <a href="http://docs.meteor.com/#/full/accounts_api">Accounts</a>API.<br>
+							<b>Meteor.user()</b> and <b>Meteor.userId()</b> are reactive data sources for currently logged in user and userID<br>
+							<b>Meteor.users</b> is the collection of User profile documents<br>
+							<b>{{currentUser}}</b> and <b>{{loggingIn}}</b> provide conditionals for use in templates  
 						</div>
 					</section>
 
@@ -684,24 +713,24 @@ meteor:PRIMARY>
 						<h2> 
 						<a href="https://www.meteor.com/try/5">10. Security w/ Methods</a> 
 						<a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
-						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-10">tags/step-10</a> 
+						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-10">tags/step-10
+						</a> 
 						</h2>
-
-						<h4 style="text-transform:lowercase;"> Use remote (server) method calls for security, efficiency </h4>
-
-						<div class="make-fragment">
 						<br>
-						<table><tr>
-							<td> </td>
-							<td> </td>
-						</tr></table>
-						
-
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
+						<div>
+						By default Meteor is in 'insecure' mode, allowing clients to directly modify the database. Let's fix this.
 						<br>
-						[Notes]
-						</p>
+						<pre><code>
+meteor remove insecure
+						</code></pre>
+						<br>
+						<i>Meteor.methods</i> enables RPC-like behavior with <i>latency compensation </i> for fast but secure updates.
+						<br>
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
+							<b>Latency Compensation with Meteor.call()</b>. Methods is executed securely on server. Meanwhile, method can 'predict' outcome on local client to speed up response. Conflicts are resolved when server computation completes and data is synced.
 						</div>
 					</section>
 
@@ -709,24 +738,22 @@ meteor:PRIMARY>
 						<h2> 
 						<a href="https://www.meteor.com/try/11">11. Publish / Subscribe</a> 
 						<a style="color:limegreen;text-transform:lowercase;font-size:28pt;" 
-						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-11">tags/step-11</a> 
+						href="https://github.com/MeteorHudsonValley/shehacksnyc/releases/tag/step-11">tags/step-11</a>
 						</h2>
-
-						<h4 style="text-transform:lowercase;"> Automated real-time data sync for given contexts </h4>
-
-						<div class="make-fragment">
 						<br>
-						<table><tr>
-							<td> </td>
-							<td> </td>
-						</tr></table>
-						
-
-						<hr style="color:gray;" width=300>
-						<p style="color:gray;font-size:12pt">
+						<div>
+						By default Meteor is in 'autopublish' mode, synching <a>all</a> data between client and server. Let's fix this.
 						<br>
-						[Notes]
-						</p>
+						<pre><code>
+meteor remove autopublish
+						</code></pre>
+						<br>
+						<i>Publish</i> (server) and <i>Subscribe</i> (client) allow data transfers to be regulated for efficiency and context.
+						<br>
+						<br>
+						<div align="left" 
+						style="color:gray;font-size:12pt">
+							<hr>
 						</div>
 					</section>
 
@@ -834,7 +861,10 @@ meteor:PRIMARY>
 
 				</section>
 
-				<!-- Testing -->
+
+
+
+				<!-- Packages -->
 				<section id="packages">
 					<h2>
 					<a href="https://atmospherejs.com">Atmosphere</a> & Packages</h2>
@@ -856,6 +886,8 @@ meteor:PRIMARY>
 						Some of the core functionality of Meteor comes from community packages e.g., <a href="https://atmospherejs.com/iron/router">iron-router</a>
 						</p>
 				</section>
+
+
 
 				<!-- Testing -->
 				<section id="testing">
@@ -884,62 +916,68 @@ meteor:PRIMARY>
 					</tr></table>
 				</section>
 
+
+
 				<!-- Recap -->
-				<section id="features1">
-					<h2>Features Recap</h2>
+				<section id="recap">
+					<section id="features1">
+						<h2>Features Recap</h2>
 
-					<span class="fragment">
-					<br>
-					<a href="http://meteor.com">Modern User Interface</a> 
-					<br><small>
-					Responsive Design * Single Page Applications
-					</small><br>
-					</span>
+						<span class="no-fragment">
+						<br>
+						<a href="http://meteor.com">Modern User Interface</a> 
+						<br><small>
+						Responsive Design * Single Page Applications
+						</small><br>
+						</span>
 
-					<span class="fragment">
-					<br>
-					<a href="http://meteor.com">Mobile + Web Friendly</a>
-					<br><small>
-					Browser Ready * Cordova Integration for Native App Markets
-					</small><br>
-					</span>
+						<span class="no-fragment">
+						<br>
+						<a href="http://meteor.com">Mobile + Web Friendly</a>
+						<br><small>
+						Browser Ready * Cordova Integration for Native App Markets
+						</small><br>
+						</span>
 
-					<span class="fragment">
-					<br>
-					<a href="http://meteor.com">Isomorphic in JavaScript</a>
-					<br><small>
-					One language * One codebase * One database API
-					</small><br>
-					</span>
+						<span class="no-fragment">
+						<br>
+						<a href="http://meteor.com">Isomorphic in JavaScript</a>
+						<br><small>
+						One language * One codebase * One database API
+						</small><br>
+						</span>
+					</section>
+
+					<section id="features2">
+						<h2>Features Recap</h2>
+
+						<span class="no-fragment">
+						<br>
+						<a href="http://meteor.com">Unified Package System
+						</a><br><small>
+						Atmosphere Repository * Meteor, Cordova and NPM Packages.
+						</small><br>
+						</span>
+
+						<span class="no-fragment">
+						<br>
+						<a href="http://meteor.com">Unified Build System
+						</a><br><small>
+						One buid tool to Create, Package, Test, Run and Deploy.
+						</small><br>
+						</span>
+
+						<span class="no-fragment">
+						<br>
+						<a href="http://meteor.com">Database Everywhere
+						</a><br><small>
+						Data on the Wire * Latency Compensation * Data Distribution Protocol
+						</small><br>
+						</span>
+					</section>
 				</section>
 
-				<section id="features2">
-					<h2>Features Recap</h2>
 
-					<span class="fragment">
-					<br>
-					<a href="http://meteor.com">Unified Package System
-					</a><br><small>
-					Atmosphere Repository * Meteor, Cordova and NPM Packages.
-					</small><br>
-					</span>
-
-					<span class="fragment">
-					<br>
-					<a href="http://meteor.com">Unified Build System
-					</a><br><small>
-					One buid tool to Create, Package, Test, Run and Deploy.
-					</small><br>
-					</span>
-
-					<span class="fragment">
-					<br>
-					<a href="http://meteor.com">Database Everywhere
-					</a><br><small>
-					Data on the Wire * Latency Compensation * Data Distribution Protocol
-					</small><br>
-					</span>
-				</section>
 
 
 				<!-- THANK YOU -->
@@ -957,8 +995,7 @@ meteor:PRIMARY>
 						Meteor <a href="http://www.meetup.com/Meteor-Hudson-Valley/">Hudson Valley</a> (Nitya) <br>
 						Meteor <a href="http://www.meetup.com/MeteorNY/">New York </a> (Michael)<br>
 						MongoDB User Group <a href="http://www.meetup.com/New-York-MongoDB-User-Group/">New York </a> (Michael)<br>
-					</p>
-					
+					</p>				
 				</section>
 
 			</div>
